@@ -1,10 +1,13 @@
 #root {
-  height: 100vh;
+  height: -webkit-fill-available;
   width: 100vw;
   margin: 0 auto;
   
   text-align: center;
   
+}
+body{
+  transition: 800ms;
 }
 .masterContainer{
   width: 100%;

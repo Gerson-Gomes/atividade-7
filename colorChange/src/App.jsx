@@ -14,16 +14,15 @@ function App() {
   }
 
   const changeBackgroundColor = () => {
-    
-    setBgColor(getRandomColor())
+    const newColor = getRandomColor();
+    setBgColor(newColor);
+    document.body.style.backgroundColor = newColor
   }
   
 
   return (
     <>
-      <div className='masterContainer' style={{
-        backgroundColor:bgColor
-      }}>
+      <div className='masterContainer'>
         <h1>Botão colorido</h1>
         <div className='buttonContainer'>
           <button className='buttonElement' onClick={changeBackgroundColor} ></button>
